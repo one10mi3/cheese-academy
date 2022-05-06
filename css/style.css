@@ -1,0 +1,576 @@
+@charset "utf-8";
+
+html { scroll-behavior: smooth;}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+p {
+  line-height: 1.5;
+}
+.fadeIn {
+  animation-name:fadeInAnime;
+  animation-duration:2s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#about, #course, #news,  #contact {
+  padding-top: 122px;
+  margin-top: -122px;
+}
+
+/* 
+header 
+*/
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 121px;
+  background: #eee;
+  box-sizing: border-box;
+  display: block;
+}
+.header__inner {
+  width: 1200px;
+  height: 121px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.header__image {
+  float: left;
+  width: 450px;
+  margin-left: 32px;
+}
+.header__menu li {
+  display: inline-block;
+  font-size: 21px;
+}
+.header__menu li a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 21px;
+  margin: 50px 50px 50px 0;
+} 
+
+
+/* 
+mainvisual 
+*/
+.mainvisual {
+  padding-top: 122px;
+}
+.mainvisual__image img {
+  width: 100%;
+}
+.mainvisual__image {
+  position: relative;
+}
+.mainvisual__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: white;
+  text-align: center;
+}
+.row2 {
+  font-size: 24px;
+  color: white;
+}
+
+
+
+/*一文字アニメーション*/
+.text.offs .effect {
+  opacity: 0;
+}
+.text.ons .effect {
+  opacity: 1;
+  transition-duration: 1s;
+}
+/*遅延の設定*/
+.delay-1 {
+  transition-delay: 0.2s;
+}
+.delay-2 {
+  transition-delay: 0.4s;
+}
+.delay-3 {
+  transition-delay: 0.6s;
+}
+.delay-4 {
+  transition-delay: 0.8s;
+}
+.delay-5 {
+  transition-delay: 1s;
+}
+.delay-6 {
+  transition-delay: 1.2s;
+}
+.delay-7 {
+  transition-delay: 1.4s;
+}
+.delay-8 {
+  transition-delay: 1.6s;
+}
+.delay-9 {
+  transition-delay: 1.8s;
+}
+.delay-10 {
+  transition-delay: 2s;
+}
+.delay-11 {
+  transition-delay: 2.2s;
+}
+.delay-12 {
+  transition-delay: 2.4s;
+}
+.delay-13 {
+  transition-delay: 2.6s;
+}
+.delay-14 {
+  transition-delay: 2.8s;
+}
+.text.offs .effect { opacity: 0; }
+.text.ons .effect { opacity: 1; transition-duration: 1s; }
+
+
+/* 
+about 
+*/
+.about {
+  text-align: center;
+}
+.en_title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.ja_title {
+  font-size: 18px;
+}
+.about__text p {
+  font-size: 16px;
+}
+
+/* 
+slide 
+*/
+/* .slide {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.slide__image {
+  display: flex;
+  animation: loop-slide 20s infinite linear 1s both;
+}
+@keyframes loop-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.slide__content img {
+  width: 400px;
+} */
+
+/* 
+course 
+*/
+.course {
+  text-align: center;
+}
+.course__box {
+  background-color: #fafafa;
+}
+.course__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.course__image img {
+  width: 600px;
+}
+.course__inner {
+  width: 480px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.course__inner2 {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.course__title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.course__message {
+  font-size: 16px;
+  text-align: left;
+}
+
+
+/* 
+news 
+*/
+.news {
+  text-align: center;
+}
+.news__box {
+  width: 300px;
+  margin-bottom: 50px;
+}
+.news__box:hover {
+  box-shadow: 0px 8px 16px -2px rgb(10 10 10 / 10%), 0px 0px 5px -10px rgb(10 10 10 / 2%);
+  transform: translate(0, -3px);
+  transform: scale(1.05);
+  transition-duration: .5s;
+}
+.news__image img {
+  width: 300px;
+}
+.news__content {
+  font-size: 14px;
+  text-align: left;
+}
+.news__content .date {
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+.news__content p {
+  line-height: 28px;
+}
+.news__wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+.hidden {
+  display: none;
+}
+
+/* 
+access 
+*/
+.access {
+  text-align: center;
+  background-color: #fafafa;
+}
+.access__inner {
+  margin-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+.access table {
+  text-align: left;
+}
+.access table tr {
+  line-height: 50px;
+}
+.access table tr th {
+  padding-right: 30px;
+}
+
+/*
+contact 
+*/
+.contact {
+  text-align: center;
+  margin-bottom: 140px;
+}
+.form__inner {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+.form__inner table {
+  border-top: solid 1px black;
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+.form__inner table tr {
+  line-height: 36px;
+}
+.form__inner table tr th {
+  width: 240px;
+  padding-right: 64px;
+  padding-left: 16px;
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+  vertical-align: top;
+}
+.form__inner table tr td {
+  width: 400px;
+  border-bottom: solid 1px black;
+  vertical-align: middle;
+}
+.form__inner table tr td input[type="text"],
+.form__inner table tr td input[type="mail"] {
+  width:328px;
+  margin: 8px;
+}
+.form__inner table tr td select {
+  width:328px;
+  margin: 8px;
+}
+.form__inner table tr td li {
+  margin: 8px 0 24px 8px;
+}
+.form__inner table textarea {
+  resize: vertical;
+  width:328px;
+  height:150px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+/*
+uranai
+*/
+.uranai__item {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #fafafa;
+  width: 500px;
+}
+.random {
+  padding-bottom: 30px;
+}
+
+
+/* 
+footer 
+*/
+footer {
+  text-align: center;
+  color: #cacaca;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #707070;
+}
+
+
+/* ボタン */
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+.bottom a {
+  width: 300px;
+  line-height: 60px;
+  color: white;
+  font-size: 18px;
+  background: #ffd61a;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.bottom a:hover {
+  background: white;
+  color: #ffd61a;
+  border: solid #ffd61a 3px;
+  margin: -3px;
+  transition: 1.0s ;
+}
+.bottom input {
+  width: 300px;
+  line-height: 60px;
+  color: white;
+  font-size: 18px;
+  background: #ffd61a;
+  vertical-align: middle;
+  border: none;
+}
+.bottom input:hover {
+  background: white;
+  color: #ffd61a;
+  border: solid #ffd61a 3px;
+  margin: -3px;
+  transition: 1.0s ;
+}
+
+/* 
+color 
+*/
+.yellow {
+  color: #ffd61a;
+}
+.black {
+  color: "#222222";
+}
+.gray {
+  color: #fafafa;
+}
+.border_color {
+  color: #cacaca;
+}
+
+/* 
+margin 
+*/
+.mt30 {
+  margin-top: 30px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mt60 {
+  margin-top: 60px;
+}
+.mb60 {
+  margin-bottom: 60px;
+}
+.mb70 {
+  margin-bottom: 70px;
+}
+.mb80 {
+  margin-bottom: 80px;
+}
+.mrl30 {
+  margin: 0 30px;
+}
+.pt60 {
+  padding-top: 60px;
+}
+
+
+/* TOPへ戻るボタン */
+#page_top {
+  position: fixed;
+  bottom: 110px;
+  right: 30px;
+  font-size: 77%;
+}
+#page_top a {
+  background-color: #707070;;
+  text-decoration: none;
+  color: white;
+  width: 100px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+#page_top a:hover {
+  text-decoration: none;
+  background: #999;
+  transition: 1.0s ;
+}
+
+
+/* //TOPへ戻るボタン */
+
+
+/* チーズの画像 */
+#cheese1 {
+	left: 30px;
+	position: fixed;
+	top: 1200px;
+	height: auto;
+	z-index: -1;
+}
+#cheese1 img,
+#cheese2 img,
+#cheese3 img
+ {
+  width: 300px;
+}
+
+#cheese2 {
+	position: fixed;
+	right: 30px;
+	top: 700px;
+	height: auto;
+	z-index: -1;
+}
+#cheese3 {
+	left: 30px;
+	position: fixed;
+	top: 1700px;
+	height: auto;
+	z-index: -1;
+}
+/* //チーズの画像 */
+
+
+/*
+初回読み込み
+ローディング画面
+*/
+.loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.loading.is-active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-animation {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #ffd61a;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-animation.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+/* スマホ */
+@media screen and (max-width: 576px){
+  .course__inner2 {
+    padding-right: 50px;
+    padding-left: 0;
+  }
+  #cheese1, #cheese2, #cheese3 {
+    display: none;
+  }
+  #page_top {
+    bottom: 130px;
+  }
+}
+
